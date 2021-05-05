@@ -56,7 +56,8 @@ app.get("/home", (req, res) => {
 
 //this router needs to fixed
 //PROJECTS ROUTER
-// const ProjectRouter = require("./routes/projects");
+const projectRouter = require("./routes/projects");
+app.use("/projects", projectRouter);
 
 
 
